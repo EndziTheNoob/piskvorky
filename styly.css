@@ -1,11 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(#615dad, #ffc8da);
+  background-attachment: fixed;
 }
+
 
 html {
   color: #ffffff;
   font-family: sans-serif;
-  box-sizing: border-box;
 }
 
 h1 {
@@ -21,8 +26,9 @@ p {
   display: flex;
   flex-direction: column;
   width: 20rem;
-  height: 65rem;
-  margin: 5% 40% 5% 40%;
+  height: 80vh;
+  margin: 5% 40% 0% 40%;
+  justify-content: center;
 }
 
 img {
