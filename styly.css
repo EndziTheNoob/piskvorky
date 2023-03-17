@@ -47,6 +47,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
+  text-align: center;
 }
 
 .button-green {
@@ -54,7 +55,7 @@ img {
   border: 0;
   border-bottom: 1px solid;
   padding: 8px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .button-green:hover {
@@ -65,7 +66,7 @@ img {
   background-color: #0197f6;
   border: 0;
   padding: 8px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .button-blue:hover {
