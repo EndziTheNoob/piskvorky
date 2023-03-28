@@ -70,7 +70,7 @@ img {
 }
 
 .button-blue:hover {
-  background-color: #0090e9
+  background-color: #0090e9;
 }
 
 
@@ -85,14 +85,16 @@ header {
 }
 
 header>h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   align-self: center;
+  font-weight: 100;
+  margin-bottom: 5%;
 }
 
 .play-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .play-container p {
@@ -101,10 +103,18 @@ header>h1 {
   font-weight: bold;
 }
 
-main {
-  max-width: 80vmin;
-  margin-left: 30%;
-  margin-right: 30%;
+.container1 {
+  display: flex;
+}
+
+.circle {
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 60%;
+  border: 0.2rem solid white;
+  display: inline-block;
+  align-self: center;
+  margin-left: 0.5rem;
 }
 
 .header-btns {
@@ -118,9 +128,52 @@ main {
 }
 
 .home-btn {
+  background-color: #1fcca4;
+}
+
+.home-btn:hover {
   background-color: #1cbb96;
 }
 
 .restart-btn {
+  background-color: #0197f6;
+}
+
+.restart-btn:hover {
   background-color: #0090e9;
+}
+
+main {
+  max-width: 80vmin;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.game {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.game button {
+  width: 100%;
+  height: 50px;
+  border: 0.1rem solid black;
+  opacity: 50%;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+}
+
+.game button:hover {
+  background-color: white;
+  opacity: 70%;
+}
+
+.game button:focus {
+  background-color: white;
+  opacity: 70%;
+}
+
+.game-btn {
+  width: 100%;
 }
