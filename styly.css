@@ -18,7 +18,7 @@ h1 {
 }
 
 p {
-  font-size: 13px;
+  font-size: 1rem;
   color: #ffffff;
 }
 
@@ -71,4 +71,56 @@ img {
 
 .button-blue:hover {
   background-color: #0090e9
+}
+
+
+/*------------------ HRA ---------------------*/
+
+header {
+  max-width: 80vmin;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+header>h1 {
+  font-size: 3rem;
+  align-self: center;
+}
+
+.play-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-container p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main {
+  max-width: 80vmin;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.header-btns {
+  display: flex;
+}
+
+.header-btns>a {
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 5%;
+}
+
+.home-btn {
+  background-color: #1cbb96;
+}
+
+.restart-btn {
+  background-color: #0090e9;
 }
