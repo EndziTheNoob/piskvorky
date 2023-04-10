@@ -175,3 +175,9 @@ header>h1 {
   background-color: white;
   opacity: 70%;
 }
+
+/*-----------------UPRAVA POLICEK----------------*/
+
+.board__field--circle {}
+
+.board__field--cross {}
