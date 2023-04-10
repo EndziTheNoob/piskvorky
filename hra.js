@@ -18,7 +18,7 @@ const selectButton = (event) => {
 
 const restart = (event) => {
   if (window.confirm('Opravdu chceš začít znovu?')) {
-    window.open('hra.html');
+    location.reload();
   } else {
     event.preventDefault();
   }
