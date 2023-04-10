@@ -16,6 +16,15 @@ const selectButton = (event) => {
   }
 };
 
+const restart = (event) => {
+  if (window.confirm('Opravdu chceš začít znovu?')) {
+    window.open('hra.html');
+  } else {
+    event.preventDefault();
+  }
+};
+document.querySelector('.restart-btn').addEventListener('click', restart);
+
 document
   .querySelector('button:nth-child(1)')
   .addEventListener('click', selectButton);
