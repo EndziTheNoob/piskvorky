@@ -178,6 +178,36 @@ header>h1 {
 
 /*-----------------UPRAVA POLICEK----------------*/
 
-.board__field--circle {}
+.board__field--circle {
+  background-image: url("circle.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: grow 0.15s linear;
+}
 
-.board__field--cross {}
+.board__field--cross {
+  background-image: url("cross.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: grow 0.15s linear;
+}
+
+@keyframes grow {
+  0% {
+    background-size: 0%;
+  }
+
+  100% {
+    background-size: 80%;
+  }
+}
+
+.cross {
+  background-image: url(cross.svg);
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(100%);
+}
