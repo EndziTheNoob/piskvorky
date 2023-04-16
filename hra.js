@@ -1,3 +1,5 @@
+import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
+
 let currentPlayer = 'circle';
 
 const selectButton = (event) => {
@@ -25,33 +27,6 @@ const restart = (event) => {
 };
 document.querySelector('.restart-btn').addEventListener('click', restart);
 
-document
-  .querySelector('button:nth-child(1)')
-  .addEventListener('click', selectButton);
-document
-  .querySelector('button:nth-child(2)')
-  .addEventListener('click', selectButton);
-document
-  .querySelector('button:nth-child(3)')
-  .addEventListener('click', selectButton);
-document
-  .querySelector('button:nth-child(4)')
-  .addEventListener('click', selectButton);
-document
-  .querySelector('button:nth-child(5)')
-  .addEventListener('click', selectButton);
-document
-  .querySelector('button:nth-child(6)')
-  .addEventListener('click', selectButton);
-document
-  .querySelector('button:nth-child(7)')
-  .addEventListener('click', selectButton);
-document
-  .querySelector('button:nth-child(8)')
-  .addEventListener('click', selectButton);
-document
-  .querySelector('button:nth-child(9)')
-  .addEventListener('click', selectButton);
-document
-  .querySelector('button:nth-child(10)')
-  .addEventListener('click', selectButton);
+const playButtons = document.querySelectorAll('.playBtn').forEach((button) => {
+  button.addEventListener('click', selectButton);
+});
