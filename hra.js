@@ -16,8 +16,37 @@ const selectButton = (event) => {
     document.getElementById('player').classList.add('circle');
     event.target.disabled = true;
   }
+  //Turning buttons into symbols array
+  const herniPole = document.querySelectorAll('.playBtn');
+  const herniPoleArray = Array.from(herniPole);
+  const herniSymboly = herniPoleArray.map((symbol) => {
+    if (symbol.classList.contains('board__field--cross')) {
+      return 'x';
+    } else if (symbol.classList.contains('board__field--circle')) {
+      return 'o';
+    } else {
+      return '_';
+    }
+  });
+  //Declaring winner
+  const vitez = findWinner(herniSymboly);
+  if (vitez === 'o') {
+    setTimeout(() => {
+      alert('Vyhrálo kolečko!');
+      location.reload();
+    }, 200);
+  } else if (vitez === 'x') {
+    setTimeout(() => {
+      alert('Vyhrál křížek!');
+      location.reload();
+    }, 200);
+  } else if (vitez === 'tie') {
+    setTimeout(() => {
+      alert('Je to remíza!');
+      location.reload();
+    }, 200);
+  }
 };
-
 const restart = (event) => {
   if (window.confirm('Opravdu chceš začít znovu?')) {
     location.reload();
@@ -27,6 +56,7 @@ const restart = (event) => {
 };
 document.querySelector('.restart-btn').addEventListener('click', restart);
 
-const playButtons = document.querySelectorAll('.playBtn').forEach((button) => {
+//Adding event listener to all buttons
+document.querySelectorAll('.playBtn').forEach((button) => {
   button.addEventListener('click', selectButton);
 });
