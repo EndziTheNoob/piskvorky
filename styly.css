@@ -161,10 +161,10 @@ header>h1 {
   width: 4vw;
   height: 4vw;
   border: 0.1rem solid black;
-  opacity: 50%;
+  opacity: 90%;
   cursor: pointer;
   padding-bottom: 0.5rem;
-  background-color: #ffffff
+  background-color: #ffffff80
 }
 
 .game button:hover {
