@@ -164,16 +164,17 @@ header>h1 {
   opacity: 50%;
   cursor: pointer;
   padding-bottom: 0.5rem;
+  background-color: #ffffff
 }
 
 .game button:hover {
   background-color: white;
-  opacity: 70%;
+  opacity: 80%;
 }
 
 .game button:focus {
   background-color: white;
-  opacity: 70%;
+  opacity: 80%;
 }
 
 /*-----------------UPRAVA POLICEK----------------*/
@@ -193,6 +194,7 @@ header>h1 {
   background-position: center;
   animation: grow 0.15s linear;
 }
+
 
 @keyframes grow {
   0% {
